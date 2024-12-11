@@ -1,0 +1,64 @@
+/*body {*/
+/*  height: 10000px;*/
+/*  margin: 0;*/
+/*  padding: 0;*/
+/*}*/
+/**/
+
+h1 {
+  position: relative;
+}
+
+h1::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 150px;
+  transform: translateX(-50%);
+  width: 40%;
+  height: 7px;
+  background-color: #f55;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  position: absolute;
+  width: 1855px;
+}
+
+.background {
+  width: 1855px;
+  height: 960px;
+  background-image: url('../../assets/FB_IMG_1513173115192.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(1px);
+}
+
+.description-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(125, 125, 125, 0.5);
+  border-radius: 30px;
+  padding: 10px 40px;
+  width: 900px;
+  height: 500px;
+}
+
+.description-container>p {
+  text-align: left;
+  font-size: 19px;
+  font-weight: 700;
+  margin: 60px 10px;
+}
+
+.presentation-contaienr {
+  height: 1000px;
+  background-color: #fbbfbb;
+}

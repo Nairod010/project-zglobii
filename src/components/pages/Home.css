@@ -1,22 +1,15 @@
-/*body {*/
-/*  height: 10000px;*/
-/*  margin: 0;*/
-/*  padding: 0;*/
-/*}*/
-/**/
-
 h1 {
   position: relative;
 }
 
-h1::after {
+.description>h1::after {
   content: '';
   position: absolute;
   bottom: -10px;
-  left: 150px;
+  left: 110px;
   transform: translateX(-50%);
   width: 40%;
-  height: 7px;
+  height: 2px;
   background-color: #f55;
 }
 
@@ -32,8 +25,8 @@ h1::after {
 
 .background {
   width: 1855px;
-  height: 960px;
-  background-image: url('../../assets/FB_IMG_1513173115192.jpg');
+  height: 968px;
+  background-image: url('../../assets/Poster_Oraselul_Zglobiu.jpg');
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -42,6 +35,7 @@ h1::after {
 
 .description-container {
   position: absolute;
+  top: 400px;
   display: flex;
   flex-direction: column;
   background-color: rgba(125, 125, 125, 0.5);
@@ -58,7 +52,35 @@ h1::after {
   margin: 60px 10px;
 }
 
-.presentation-contaienr {
-  height: 1000px;
-  background-color: #fbbfbb;
+.show-image>img {
+  max-width: 615px;
+  height: auto;
+}
+
+
+.presentation-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 1300px;
+  overflow: hidden;
+}
+
+.show {
+  margin: 20px;
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
+}
+
+.description>h1 {
+  font-size: 50px;
+}
+
+.description>p {
+  font-size: 18px;
+}
+
+.show.two-container {
+  align-self: flex-end;
 }

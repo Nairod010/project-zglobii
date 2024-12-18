@@ -4,7 +4,7 @@ import posterTwo from "../../assets/poster_2.jpg";
 
 export default function Home() {
   return (
-    <div className="main-container">
+    <div className="first-page-container">
       <div className="background"></div>
       <div className="description-container">
         <h1 className="home-article-title">Magazinul cu Zglobii</h1>

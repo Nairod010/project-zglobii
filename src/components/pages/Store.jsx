@@ -20,16 +20,16 @@ export default function Store() {
   // }, []);
 
   const products = [
-    { id: 1, name: 'Stuff 1', price: 100, imageUrl: 'https://via.placeholder.com/150' },
-    { id: 2, name: 'Stuff 2', price: 100, imageUrl: 'https://via.placeholder.com/150' },
-    { id: 3, name: 'Stuff 3', price: 100, imageUrl: 'https://via.placeholder.com/150' },
-    { id: 4, name: 'Stuff 4', price: 100, imageUrl: 'https://via.placeholder.com/150' },
-    { id: 1, name: 'Stuff 5', price: 100, imageUrl: 'https://via.placeholder.com/150' },
-    { id: 2, name: 'Stuff 6', price: 100, imageUrl: 'https://via.placeholder.com/150' },
-    { id: 3, name: 'Stuff 7', price: 100, imageUrl: 'https://via.placeholder.com/150' },
-    { id: 4, name: 'Stuff 8', price: 100, imageUrl: 'https://via.placeholder.com/150' },
-    { id: 4, name: 'Stuff 9', price: 123, imageUrl: 'https://via.placeholder.com/150' },
-    { id: 4, name: 'Stuff 10', price: 124, imageUrl: 'https://via.placeholder.com/150' }
+    { id: 1, name: 'Produs 1', price: 100, imageUrl: 'https://via.placeholder.com/150' },
+    { id: 2, name: 'Produs 2', price: 100, imageUrl: 'https://via.placeholder.com/150' },
+    { id: 3, name: 'Produs 3', price: 100, imageUrl: 'https://via.placeholder.com/150' },
+    { id: 4, name: 'Produs 4', price: 100, imageUrl: 'https://via.placeholder.com/150' },
+    { id: 1, name: 'Produs 5', price: 100, imageUrl: 'https://via.placeholder.com/150' },
+    { id: 2, name: 'Produs 6', price: 100, imageUrl: 'https://via.placeholder.com/150' },
+    { id: 3, name: 'Produs 7', price: 100, imageUrl: 'https://via.placeholder.com/150' },
+    { id: 4, name: 'Produs 8', price: 100, imageUrl: 'https://via.placeholder.com/150' },
+    { id: 4, name: 'Produs 9', price: 123, imageUrl: 'https://via.placeholder.com/150' },
+    { id: 4, name: 'Produs 10', price: 124, imageUrl: 'https://via.placeholder.com/150' }
   ]
 
 
@@ -43,6 +43,7 @@ export default function Store() {
             <div className="item-details">
               <p className="item-name">{product.name}</p>
               <p className="item-price">{product.price} lei</p>
+              <button className="buy-item">Cumpara</button>
             </div>
           </li>
         ))}

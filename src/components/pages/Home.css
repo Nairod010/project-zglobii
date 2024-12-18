@@ -1,4 +1,51 @@
-h1 {
+.first-page-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  width: 100%;
+  max-width: 1855px;
+  margin: 0 auto;
+}
+
+.background {
+  width: 100%;
+  max-width: 1855px;
+  height: 968px;
+  background-image: url('../../assets/Poster_Oraselul_Zglobiu.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(1px);
+  position: relative;
+}
+
+.description-container {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  transform: translate(-50%, -50%);
+  background-color: rgba(125, 125, 125, 0.7);
+  border-radius: 30px;
+  padding: 20px 40px;
+  width: 900px;
+  height: 500px;
+  z-index: 10;
+}
+
+.description-container>p {
+  text-align: left;
+  font-size: 19px;
+  font-weight: 700;
+  margin: 20px 10px;
+}
+
+.description>h1 {
+  font-size: 50px;
   position: relative;
 }
 
@@ -6,57 +53,21 @@ h1 {
   content: '';
   position: absolute;
   bottom: -10px;
-  left: 110px;
+  left: 50%;
   transform: translateX(-50%);
   width: 40%;
   height: 2px;
   background-color: #f55;
 }
 
-.main-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 60px;
-  position: absolute;
-  width: 1855px;
-}
-
-.background {
-  width: 1855px;
-  height: 968px;
-  background-image: url('../../assets/Poster_Oraselul_Zglobiu.jpg');
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  filter: blur(1px);
-}
-
-.description-container {
-  position: absolute;
-  top: 400px;
-  display: flex;
-  flex-direction: column;
-  background-color: rgba(125, 125, 125, 0.5);
-  border-radius: 30px;
-  padding: 10px 40px;
-  width: 900px;
-  height: 500px;
-}
-
-.description-container>p {
-  text-align: left;
-  font-size: 19px;
-  font-weight: 700;
-  margin: 60px 10px;
+.description>p {
+  font-size: 18px;
 }
 
 .show-image>img {
   max-width: 615px;
   height: auto;
 }
-
 
 .presentation-container {
   display: flex;
@@ -71,14 +82,6 @@ h1 {
   display: flex;
   justify-content: space-around;
   gap: 50px;
-}
-
-.description>h1 {
-  font-size: 50px;
-}
-
-.description>p {
-  font-size: 18px;
 }
 
 .show.two-container {

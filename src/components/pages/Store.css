@@ -7,6 +7,9 @@ ul {
   top: 100px;
   box-sizing: border-box;
   margin: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .store-container>h1 {
@@ -15,10 +18,9 @@ ul {
 
 .items-list {
   padding: 100px;
-  border: 2px solid black;
   display: grid;
-  grid-template-columns: 450px 450px 450px;
-  grid-template-rows: 450px 450px 450px;
+  grid-template-columns: repeat(3, 450px);
+  grid-template-rows: repeat(3, 450px);
   gap: 50px;
   align-items: center;
   justify-items: center;
@@ -27,28 +29,89 @@ ul {
 .items {
   display: flex;
   flex-direction: column;
-  gap: 30px;
   align-items: center;
+  position: relative;
 }
 
 .item-details {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: space-evenly;
   width: 200px;
+  position: relative;
 }
 
 .item-details>p {
+  position: relative;
   font-size: 22px;
   border: 1px solid black;
   padding: 10px;
+  text-align: center;
+  margin-bottom: 1px;
+}
+
+
+.item-name {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  color: #333;
+  margin-top: 20px;
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.item-price {
+  font-size: 18px;
+  color: #555;
+  text-align: center;
+  margin: 3px 0;
+  padding: 5px 0;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
 
 .items>img {
   border: 2px solid grey;
   height: 300px;
+  display: block;
+  transition: transform 0.3s ease, border-color 0.3 ease;
 }
 
 .items>img:hover {
-  border: 3px solid grey;
-  height: 330px;
+  height: 300px;
+  transform: scale(1.1);
+  border-color: black;
+}
+
+.buy-item {
+  display: inline-block;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  /* Primary blue */
+  border: none;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 5px;
+  /* Rounded button */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.buy-item:hover {
+  background-color: #0056b3;
+  /* Darker blue on hover */
+  transform: scale(1.05);
+  /* Slight enlargement on hover */
+}
+
+.buy-item:active {
+  background-color: #004494;
+  /* Even darker blue when clicked */
+  transform: scale(1);
+  /* Reset scale */
 }

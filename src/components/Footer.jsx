@@ -1,16 +1,13 @@
-import "./Footer.css"; // Import your footer styles
+import "./Footer.css";
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-content">
-        {/* Section 1: Logo and Copyright */}
         <FooterLogo />
 
-        {/* Section 2: Quick Links */}
         <FooterLinks />
 
-        {/* Section 3: Social Media Links */}
         <FooterSocial />
       </div>
     </footer>

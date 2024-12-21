@@ -15,7 +15,7 @@ function App() {
         <Navbar />
         <div className="container">
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/project-zglobii" element={<Home />} />
             <Route path="/home" element={<Home />} />
             <Route path="/store" element={<Store />} />
             <Route path="/charity" element={<Charity />} />

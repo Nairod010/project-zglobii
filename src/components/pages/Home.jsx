@@ -5,7 +5,6 @@ import posterTwo from "../../assets/poster_2.jpg";
 export default function Home() {
   return (
     <div className="first-page-container">
-      <div className="background"></div>
       <div className="description-container">
         <h1 className="home-article-title">Magazinul cu Zglobii</h1>
         <p>Magazinul cu Zglobii este un magazin diversificat. Cu produse dedicate copiilor. Magazinul cu Zglobii va fi si pentru viitori parinti indragostiti dar si pentru cadourile lui Mos Craciun. Iepurasul va gasi pentru copii cadourile perfecte pentru copii si parintii. In Magazinul cu Zgobii veti putea dazii cadoul perfect pentru zile de nastere. Magazinul Zglobii va poate personaliza cana, tricoul sau ghiozdanul preferat cu ce iti doresti sa apara pe produsul final. Multe alte surprize va vom pregatii in micul MAGAZINUL CU ZGLOBII.</p>

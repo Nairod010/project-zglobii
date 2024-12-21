@@ -2,10 +2,29 @@ import "./Events.css";
 
 export default function Events() {
   const events = [
-    { id: 1, title: "Charity Run 2024", date: "March 15, 2024", location: "City Park", description: "Join us for a fun run to support local charities." },
-    { id: 2, title: "Community Cleanup", date: "April 22, 2024", location: "Riverbank Area", description: "Help clean up the environment and make a difference." },
-    { id: 3, title: "Fundraiser Gala", date: "May 10, 2024", location: "Grand Hall", description: "An elegant evening to raise funds for our cause." },
+    {
+      id: 1,
+      title: "Teatru Zglobii",
+      date: "20 ianuarie 2024",
+      location: "Teatrul Zglobii, București",
+      description: "Un spectacol teatral încântător pentru copii și părinți, plin de râsete și creativitate.",
+    },
+    {
+      id: 2,
+      title: "Petreceri Zglobii",
+      date: "14 februarie 2024",
+      location: "Happy Kids Club, Cluj-Napoca",
+      description: "Sărbătoriți alături de noi la un eveniment tematic pentru copii, cu jocuri, muzică și distracție.",
+    },
+    {
+      id: 3,
+      title: "Spectacole Interactive",
+      date: "10 martie 2024",
+      location: "Scena Centrală, Timișoara",
+      description: "Alăturați-vă unui spectacol interactiv ce îmbină povestirea, muzica și participarea publicului.",
+    },
   ];
+
 
   return (
     <div className="events-container">

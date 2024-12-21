@@ -1,1 +1,116 @@
+.charity-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 
+.charity-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+.charity-description {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.charity-subtitle {
+  font-size: 1.8rem;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.charity-list {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.charity-list li {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #555;
+  padding-left: 20px;
+  position: relative;
+}
+
+.charity-list li::before {
+  content: "✔";
+  color: #007bff;
+  position: absolute;
+  left: 0;
+}
+
+.charity-contact {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-top: 20px;
+  color: #555;
+}
+
+.charity-contact a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.charity-contact a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .charity-container {
+    padding: 15px;
+  }
+
+  .charity-title {
+    font-size: 2rem;
+  }
+
+  .charity-description {
+    font-size: 1rem;
+  }
+
+  .charity-subtitle {
+    font-size: 1.5rem;
+  }
+
+  .charity-list li {
+    font-size: 0.9rem;
+  }
+
+  .charity-contact {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .charity-title {
+    font-size: 1.8rem;
+  }
+
+  .charity-description {
+    font-size: 0.9rem;
+  }
+
+  .charity-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .charity-list li {
+    font-size: 0.8rem;
+  }
+
+  .charity-contact {
+    font-size: 0.8rem;
+  }
+}

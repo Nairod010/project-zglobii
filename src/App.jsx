@@ -1,16 +1,16 @@
-import './App.css'
-import Navbar from './components/Navbar'
-import Home from './components/pages/Home'
-import Store from './components/pages/Store'
-import Charity from './components/pages/Charity'
-import Events from './components/pages/Events'
-import Contact from './components/pages/Contact'
-import Footer from './components/Footer'
-import { Route, Routes } from "react-router-dom"
+import './App.css';
+import Navbar from './components/Navbar';
+import Home from './components/pages/Home';
+import Store from './components/pages/Store';
+import Charity from './components/pages/Charity';
+import Events from './components/pages/Events';
+import Contact from './components/pages/Contact';
+import Footer from './components/Footer';
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <div>
+    <div id="root">
       <div className="page-container">
         <Navbar />
         <div className="container">
@@ -25,10 +25,10 @@ function App() {
         </div>
       </div>
       <Footer />
-    </div >
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;
 
 

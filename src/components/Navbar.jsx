@@ -1,14 +1,30 @@
 import "./Navbar.css";
 import { Link, useResolvedPath, useMatch } from "react-router-dom";
 import PropTypes from "prop-types";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMobileView, setIsMobileView] = useState(window.innerWidth <= 768)
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobileView(window.innerWidth <= 768);
+      if (window.innerWidth > 768) {
+        setIsMenuOpen(false); // Ensure menu is not toggled on larger screens
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
 
   return (
     <nav className="navbar">
@@ -20,7 +36,10 @@ const Navbar = () => {
       >
         ☰
       </div>
-      <ul className={`navbar-links ${isMenuOpen ? "visible" : "hidden"}`}>
+      <ul
+        className={`navbar-links ${isMobileView && !isMenuOpen ? "hidden" : "visible"
+          }`}
+      >
         <CustomLink to="/home">ACASA</CustomLink>
         <CustomLink to="/store">MAGAZIN</CustomLink>
         <CustomLink to="/charity">PROIECTE CARITABILE</CustomLink>

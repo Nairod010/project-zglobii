@@ -40,19 +40,19 @@
 .navbar-links li a {
   text-decoration: none;
   color: #fff;
-  font-size: 1rem;
+  font-size: 1.1rem;
   padding: 5px 10px;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .navbar-links li a:hover {
-  background-color: #444;
+  /*background-color: #444;*/
   color: #007bff;
 }
 
 .navbar-links li.active a {
-  background-color: #007bff;
-  color: #fff;
+  /*background-color: #007bff;*/
+  color: #007bff;
   font-weight: bold;
 }
 

@@ -18,9 +18,9 @@ export default function Charity() {
 
       <h2 className="charity-subtitle">Contactati-ne</h2>
       <p className="charity-contact">
-        Address: Ion Mihalache 331, Sector 1, Bucuresti.<br />
+        Adresa: Ion Mihalache 331, Sector 1, Bucuresti.<br />
         Email: cio_sil@yahoo.com<br />
-        Phone: 0742671808
+        Telefon: 0742671808
       </p>
     </div>
   );

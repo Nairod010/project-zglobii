@@ -15,13 +15,13 @@ const Footer = () => {
 const FooterLogo = () => (
   <div className="footer-logo">
     <h3>Zglobii</h3>
-    <p>&copy; 2024 Zglobii. All rights reserved.</p>
+    <p>&copy; 2024 Zglobii.ro</p>
   </div>
 );
 
 const FooterSocial = () => (
   <div className="footer-social">
-    <h4>Follow Us</h4>
+    <h4>Ne Puteti urmari aici:</h4>
     <div className="social-icons">
       <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
         Facebook
